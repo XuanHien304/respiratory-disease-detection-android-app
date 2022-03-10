@@ -7,7 +7,15 @@ The goal of this project is to build a mobile app that can detect coughing and b
 
 In this app, we could detect 6 situation of the patients : bronchiectasis, pneumonia, bronchiolitis, COPD, URTI, and healthy.
 
-## Interface
+## User Interface
 
 ![INTERFACE!](image/unknown.png)
+
+First, pressing ```Record``` and start recording your coughing (recommend) or breathing sound for at least 10 seconds
+
+Then ```Stop``` button is for finishing, we can play sound by ```Play``` to check the audio
+
+Next we use ```Upload``` to send audio file recorded to our Flask server 
+
+Finally, we get our result by  ```Predict``` button
 
