@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AudioCapture</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="stop_playing_record">Stop playing Record</string>
+    <string name="predict">predict</string>
+    <string name="upload">UPLOAD</string>
+    <string name="prediction">PREDICT</string>
+</resources>
