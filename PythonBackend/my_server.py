@@ -5,27 +5,9 @@ from flask_cors import CORS, cross_origin
 from tensorflow.keras.models import load_model
 import librosa
 import os
+from utils.preprocessing import preprocessing
 
 app = Flask(__name__)
-
-
-def preprocessing(audio_file):
-    sr_new = 16000 # 16kHz sample rate
-    x, sr = librosa.load(audio_file, sr=sr_new)
-
-    max_len = 5 * sr_new  
-    if x.shape[0] < max_len:
-      # padding with zero
-      pad_width = max_len - x.shape[0]
-      x = np.pad(x, (0, pad_width))
-    elif x.shape[0] > max_len:
-      # truncated
-      x = x[:max_len]
-
-      feature = librosa.feature.mfcc(x, sr=sr_new)
-      
-    return feature
-
 
 
 # Apply Flask CORS
