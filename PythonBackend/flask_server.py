@@ -3,7 +3,6 @@ import tensorflow as tf
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
 from tensorflow.keras.models import load_model
-import librosa
 import os
 from utils.preprocessing import preprocessing
 
