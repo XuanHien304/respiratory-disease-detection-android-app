@@ -36,3 +36,4 @@ def LSTM_model(input_shape, dropout_rate):
     model_lstm.add(Dense(6, activation = 'softmax'))
 
     return model_lstm
+
